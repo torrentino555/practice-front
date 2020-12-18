@@ -1,0 +1,24 @@
+.header-user__unknown {
+    cursor: pointer;
+}
+
+.header-user__popup-content {
+     width: 100px !important;
+     border-radius: 7px !important;
+     cursor: pointer;
+ }
+
+.header-user {
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.header-user__logout {
+    color: black;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 600;
+}

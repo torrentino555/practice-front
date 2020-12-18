@@ -1,0 +1,47 @@
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #141414;
+    color: white;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.header__logo-text {
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
+}
+
+.header-user {
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.header-user__unknown {
+    cursor: pointer;
+}
+
+.header-user__popup-content {
+    width: 100px !important;
+    border-radius: 7px !important;
+    cursor: pointer;
+}
+
+.header-user__logout {
+    color: black;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.header-user__logout:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}

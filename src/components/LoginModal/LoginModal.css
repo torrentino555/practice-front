@@ -1,0 +1,120 @@
+.login-modal {
+    color: black;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    position: relative;
+}
+
+.tickets {
+    width: 1000px;
+}
+
+.ticket {
+    display: flex;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.ticket:last-child {
+    border-bottom: none;
+}
+
+.ticket__text {
+    color: black;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.login-modal__wrapper {
+    position: relative;
+    padding-top: 30px;
+}
+
+.login-modal__close-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-image: url(../../images/close-icon.svg);
+    width: 20px;
+    height: 20px;
+
+}
+
+.login-modal > * + * {
+    margin-top: 15px;
+}
+
+.login-modal__link {
+    color: blue;
+    cursor: pointer;
+}
+
+.login-modal__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-modal__hr {
+    width: 100%;
+}
+
+.login-modal__h1 {
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+}
+
+.login-modal__label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.login-modal__label > input {
+    margin-top: 15px;
+    border: none;
+    border-bottom: 1px solid blue;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.login-modal__button {
+    padding: 7px 5px;
+    margin-top: 30px;
+    background-color: #00bc1b;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-modal__error {
+    color: red;
+    font-size: 12px;
+    min-height: 12px;
+}
+
+.login-modal__loader {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-68%);
+    font-size: 20px;
+}
+
+.login-modal__server-error {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: red;
+}
