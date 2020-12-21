@@ -15,9 +15,9 @@ axios.interceptors.request.use(request => {
     }
 
     if (!isNil(token) && !isEmpty(token) && token !== 'null')
-        request.headers = { 'token': `${ token.substr(1, token.length - 2) }` }
+        request.headers.token = `${ token.substr(1, token.length - 2) }`
     if (!isNil(userId) && !isEmpty(userId) && userId !== 'null')
-        request.headers = { 'userId': `${ userId.substr(1, userId.length - 2) }` }
+        request.headers['user-id'] = `${ userId.substr(1, userId.length - 2) }`
 
     return request
 })

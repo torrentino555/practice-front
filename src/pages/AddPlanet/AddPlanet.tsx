@@ -80,7 +80,7 @@ export default function AddPlanet() {
 
         if (isEmpty(weight)) {
             errors.weight = 'Обязательное поле'
-        } else if (!/[0-9]+\.?[0-9]*/g.test(weight)) {
+        } else if (!/^[0-9]+\.?[0-9]*$/g.test(weight)) {
             errors.weight = 'Неверный формат, пример верного: 1, 2, 3.02'
         }
 
